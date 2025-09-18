@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { validateNote, validateNotePatch } = require('../validators/validation');
 let newId = 1;
-let notes = [
+const notes = [
     { id: newId++, name: "Note1", content: "This is note 1's content" },
     { id: newId++, name: "Note2", content: "This is note 2's content" },
     { id: newId++, name: "Note3", content: "This is note 3's content" }
