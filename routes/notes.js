@@ -30,7 +30,6 @@ router.post('/', (req, res) => {
             status: "error",
             message: error.details[0].message
         });
-    // const newId = notes.length > 0 ? notes[notes.length - 1].id + 1 : 1;
     const note = {
         id: newId++,
         name: req.body.name,

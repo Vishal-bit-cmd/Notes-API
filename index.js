@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
     res.json('Notes API');
 });
 
-app.use((req, res) => {
+app.use((req, res) => { 
     res.status(404).json({ status: "error", message: "Route not found" });
 });
 
